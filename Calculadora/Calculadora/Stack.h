@@ -3,7 +3,7 @@
 #include <iostream>
 template<class T>
 struct nodeS {
-	T* data;
+	const T* data;
 	struct nodeS* next;
 };
 template <class T>
@@ -14,8 +14,8 @@ private:
 public:
 	Stack();
 	~Stack();
-	void push(const T*);
-	T* pop();
+	void push(const T  *);
+	const T* pop();
 	T* peek();
 };
 #endif 
@@ -36,7 +36,7 @@ inline Stack<T>::~Stack(){
 }
 
 template<class T>
-inline void Stack<T>::push(const T * item) {
+inline void Stack<T>::push(const T* item) {
 	 nodeS<T>* nuevo;
 	try {
 		nuevo = new nodeS<T>;
@@ -44,16 +44,16 @@ inline void Stack<T>::push(const T * item) {
 	catch (std::bad_alloc exception) {
 		return;
 	}
-	nuevo->data = *item;
+	nuevo->data = item;
 	nuevo->next = top;
 	top = nuevo;
 }
 
 template<class T>
-inline T * Stack<T>::pop(){
+inline const T* Stack<T>::pop(){
 	if (isEmpty())
 		return nullptr;
-	T* _data;
+	 const T* _data;
 	nodeS<T>* tmp;
 	_data = top->data;
 	tmp = top;
