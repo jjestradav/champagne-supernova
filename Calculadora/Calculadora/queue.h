@@ -6,7 +6,7 @@
 
 template<class T>
 struct NodeQ {
-	T* data;
+	const T* data;
 	struct NodeQ<T>* next;
 };
 template<class T>
@@ -19,8 +19,8 @@ public:
 	queue();
 	~queue();
 	void enqueue(const T*);
-	T* dequeue();
-	T* next();
+	const T* dequeue();
+	const T* next();
 };
 #endif // QUEUE_H
 
@@ -61,11 +61,11 @@ inline void queue<T>::enqueue(const T * _data) {
 	}
 }
 template<class T>
-inline T * queue<T>::dequeue(){
+inline const T * queue<T>::dequeue(){
 	if (isEmpty()) 
 	return nullptr;
 	NodeQ<T>* tmp;
-	T* _data;
+	const T* _data;
 	tmp = head;
 	_data = head->data;
 	head = head->next;
@@ -78,7 +78,7 @@ inline T * queue<T>::dequeue(){
 }
 
 template<class T>
-inline T * queue<T>::next(){
+inline const T * queue<T>::next(){
 	if (isEmpty())
 		return nullptr;
 	return head->data;
