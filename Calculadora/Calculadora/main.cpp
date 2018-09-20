@@ -10,8 +10,8 @@
 #include<stack>
 using namespace std;
 
-void convertirACola(string expresion, queue<string>& cola);
 istream& capturarExpresion(istream&, string&);
+void convertirACola(string expresion, queue<string>& cola);
 void imprimirCola(queue<string> cola);
 bool esNumero(string numero);
 queue<string> convertirPosfija(queue<string> cola);

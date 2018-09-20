@@ -115,9 +115,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Calculadora.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calculadora.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="queue.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
