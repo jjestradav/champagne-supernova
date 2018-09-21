@@ -1,4 +1,3 @@
-#pragma once
 //Esta clase lista se puede utilizar para hacer un historial
 //de las operaciones que se han realizado durante la ejecucion 
 //de el programa. 

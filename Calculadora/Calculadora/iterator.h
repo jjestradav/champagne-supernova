@@ -1,4 +1,3 @@
-#pragma once
 #include "List.h"
 #ifndef ITERATOR_H
 #define ITERATOR_H
