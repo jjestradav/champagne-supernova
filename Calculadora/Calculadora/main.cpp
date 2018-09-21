@@ -1,7 +1,4 @@
-/*
-	Nota: revisar el procedimiento cuando son numeros
-	negativos, por ejemplo -3+-5
-*/
+/**<members>Nota: revisar el procedimiento cuando son numeros negativos, por ejemplo -3+-5</members>*/
 
 #include <iostream>
 #include<string>
@@ -141,12 +138,13 @@ istream& capturarExpresion(istream& entrada, string& exp) {
 	}
 	return entrada;
 }
-/*
+/**<idea>
 	La idea del metodo es sustituir los caracteres que usabamos para realizar
 	operaciones por string. Antes revisabamos caracter por caracter pero cuando
 	son numeros superiores a 9 no funciona, por lo que se implementa una cola que
 	tiene el proposito de almacenar los numeros y operandos en el mismo orden que
 	fueron digitados para luego ser evaluados en el orden que corresponda, FIFO
+	</idea>
 */
 void convertirACola(string expresion, queue<string>& cola) {
 	string numTemp;
