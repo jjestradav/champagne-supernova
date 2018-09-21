@@ -5,11 +5,14 @@
 #ifndef LIST_H
 #define LIST_H
 #include <iostream>
+template <class T>
+class iterator;
 template<class T>
 struct Node {
 	const T* data;
 	Node<T>* next;
 };
+
 template <class T> 
 class List {
 private:
@@ -25,7 +28,7 @@ public:
 	//T* pop(int pos); creo que esta operacion no es necesaria
 	void deletelist();
 	bool isEmpty();
-
+	iterator<List>* getiterator();
 };
 #endif // !LIST_H
 
@@ -121,3 +124,11 @@ inline bool List<T>::isEmpty()
 {
 	return first == nullptr;
 }
+
+//template<class List>
+//template<class T>
+//inline iterator<List>* List<T>::getiterator(){
+//	return NULL;
+//}
+
+

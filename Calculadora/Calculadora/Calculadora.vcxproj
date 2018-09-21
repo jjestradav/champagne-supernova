@@ -76,6 +76,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+      <XMLDocumentationFileName>main</XMLDocumentationFileName>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -118,6 +120,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="iterator.h" />
+    <ClInclude Include="List.h" />
     <ClInclude Include="queue.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
