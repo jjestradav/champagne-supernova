@@ -1,6 +1,19 @@
 /**<members>Nota: revisar el procedimiento cuando son numeros negativos, por ejemplo -3+-5</members>*/
 
 #include <iostream>
+<<<<<<< HEAD
+#include "queue.h"
+#include "Stack.h"
+int main() {
+	Stack<int> pila;
+	queue<int> cola;
+	int *x = new int (1);
+	cola.enqueue(x);
+	pila.push(x);
+	std::cout << *pila.pop() << std::endl;
+	std::cout << *cola.dequeue() << std::endl;
+	system("pause");
+=======
 #include<string>
 #include<cstdlib>
 #include<queue>
@@ -22,6 +35,7 @@ int main() {
 
 	system("pause");
 
+>>>>>>> ce12fe9d0ff25fcf8a74b562db2bebe42b456695
 	return 0;
 }
 

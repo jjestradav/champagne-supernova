@@ -120,8 +120,11 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
     <ClInclude Include="Calculadora.h" />
     <ClInclude Include="CambioDeBase.h" />
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4
     <ClInclude Include="List.h" />
     <ClInclude Include="queue.h" />
     <ClInclude Include="Stack.h" />

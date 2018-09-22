@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+#pragma once
+///<description>Esta clase lista se puede utilizar para hacer un historial
+///de las operaciones que se han realizado durante la ejecucion 
+///de el programa.<description/> 
+#ifndef LIST_H
+#define LIST_H
+#include <iostream>
+=======
 //Esta clase lista se puede utilizar para hacer un historial
 //de las operaciones que se han realizado durante la ejecucion 
 //de el programa. 
@@ -6,12 +15,16 @@
 #include <iostream>
 template <class T>
 class iterator;
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4
 template<class T>
 struct Node {
 	const T* data;
 	Node<T>* next;
 };
+<<<<<<< HEAD
+=======
 
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4
 template <class T> 
 class List {
 private:
@@ -27,7 +40,11 @@ public:
 	//T* pop(int pos); creo que esta operacion no es necesaria
 	void deletelist();
 	bool isEmpty();
+<<<<<<< HEAD
+
+=======
 	iterator<List>* getiterator();
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4
 };
 #endif // !LIST_H
 
@@ -123,6 +140,8 @@ inline bool List<T>::isEmpty()
 {
 	return first == nullptr;
 }
+<<<<<<< HEAD
+=======
 
 //template<class List>
 //template<class T>
@@ -131,3 +150,4 @@ inline bool List<T>::isEmpty()
 //}
 
 
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4

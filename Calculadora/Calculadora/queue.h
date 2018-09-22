@@ -6,7 +6,7 @@
 
 template<class T>
 struct NodeQ {
-	T* data;
+	const T* data;
 	struct NodeQ<T>* next;
 };
 template<class T>
@@ -18,10 +18,16 @@ private:
 public:
 	queue();
 	~queue();
+<<<<<<< HEAD
+	void enqueue(const T*);
+	const T* dequeue();
+	const T* next();
+=======
 	bool isEmpty();
 	void enqueue(T&);
 	T& dequeue();
 	T& next();
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4
 };
 #endif // QUEUE_H
 
@@ -62,6 +68,18 @@ inline void queue<T>::enqueue(T& _data) {
 	}
 }
 template<class T>
+<<<<<<< HEAD
+inline const T * queue<T>::dequeue(){
+	if (isEmpty()) 
+	return nullptr;
+	NodeQ<T>* tmp;
+	const T* _data;
+	tmp = head;
+	_data = head->data;
+	head = head->next;
+	if (head == nullptr) {
+		tail = nullptr;
+=======
 inline T & queue<T>::dequeue() {
 	if (!isEmpty()) {
 		NodeQ<T>* tmp;
@@ -75,13 +93,21 @@ inline T & queue<T>::dequeue() {
 		delete tmp;
 		tmp = nullptr;
 		return *_data;
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4
 	}
 }
 
 template<class T>
+<<<<<<< HEAD
+inline const T * queue<T>::next(){
+	if (isEmpty())
+		return nullptr;
+	return head->data;
+=======
 inline T& queue<T>::next() {
 	if (!isEmpty())
 		return *head->data;
 
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4
 }
 
