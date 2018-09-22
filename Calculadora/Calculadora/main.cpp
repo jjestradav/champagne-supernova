@@ -7,7 +7,6 @@
 #include<stack>
 #include"Calculadora.h"
 
-
 istream& capturarExpresion(istream&, string&);
 void convertirACola(string expresion, std::queue<string>& cola);
 void imprimirCola(std::queue<string> cola);
@@ -18,17 +17,6 @@ double operacion(char, double, double);
 double evaluarPosfija(std::queue<string> colaPosfija);
 
 int main() {
-	//queue<string> cola;
-	//queue<string> colaPosFija;
-	//string expresion;
-	//double resultado;
-	//capturarExpresion(cin, expresion);
-	//convertirACola(expresion, cola);
-	//// imprimirCola(cola);
-	//colaPosFija = convertirPosfija(cola);
-	//resultado = evaluarPosfija(colaPosFija);
-	//cout << resultado << endl;
-
 	Calculadora calculadora;
 	calculadora.calcular();
 
@@ -142,6 +130,7 @@ istream& capturarExpresion(istream& entrada, string& exp) {
 	}
 	return entrada;
 }
+
 /**<idea>
 	La idea del metodo es sustituir los caracteres que usabamos para realizar
 	operaciones por string. Antes revisabamos caracter por caracter pero cuando
