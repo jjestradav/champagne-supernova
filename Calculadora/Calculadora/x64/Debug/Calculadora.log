@@ -1,0 +1,81 @@
+﻿  main.cpp
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\main.cpp(7): error C2059: syntax error: '<<'
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(8): error C2143: syntax error: missing ';' before '{'
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(8): error C2447: '{': missing function header (old-style formal list?)
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(15): error C2059: syntax error: '<'
+  c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(24): note: see reference to class template instantiation 'queue<T>' being compiled
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(15): error C2238: unexpected token(s) preceding ';'
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(16): error C2059: syntax error: '<'
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(16): error C2238: unexpected token(s) preceding ';'
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(30): error C3861: 'head': identifier not found
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(35): error C3861: 'head': identifier not found
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(36): error C3861: 'tail': identifier not found
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(45): error C2760: syntax error: unexpected token '<', expected 'declaration'
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(67): error C2760: syntax error: unexpected token '<', expected 'declaration'
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\queue.h(84): error C3861: 'head': identifier not found
+c:\users\jisaa\onedrive\documentos\dell\github\champagne-supernova\calculadora\calculadora\main.cpp(19): error C2059: syntax error: '=='
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(17): error C2143: syntax error: missing ';' before '{'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(19): error C2951: template declarations are only permitted at global, namespace, or class scope
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(22): error C2988: unrecognizable template declaration/definition
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(22): error C2143: syntax error: missing ';' before '<'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(22): error C7525: inline variables require at least '/std:c++17'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(22): error C2059: syntax error: '<'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(25): error C2143: syntax error: missing ';' before '{'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(26): error C2653: 'ios_base': is not a class or namespace name
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(26): error C2065: 'iostate': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(26): error C2146: syntax error: missing ';' before identifier '_State'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(26): error C2065: '_State': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(26): error C2065: 'goodbit': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(27): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(27): error C2065: '_Size': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(28): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(28): error C2065: '_Size': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(29): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(29): error C2988: unrecognizable template declaration/definition
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(29): error C2143: syntax error: missing ';' before '<'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(29): error C2039: 'sentry': is not a member of '`global namespace''
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(31): error C2065: '_Ok': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(32): error C2065: '_State': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(32): error C2653: 'ios_base': is not a class or namespace name
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(32): error C2065: 'badbit': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(36): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(36): error C2653: 'ios_base': is not a class or namespace name
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(36): error C2065: 'adjustfield': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(36): error C2065: 'left': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(39): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(41): error C2065: '_State': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(41): error C2653: 'ios_base': is not a class or namespace name
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(41): error C2065: 'badbit': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(45): error C2065: '_State': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(45): error C2653: 'ios_base': is not a class or namespace name
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(45): error C2065: 'goodbit': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(46): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(46): error C2065: '_Data': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(46): error C2065: 'streamsize': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(46): warning C4346: '_Traits::eof': dependent name is not a type
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(46): note: prefix with 'typename' to indicate a type
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(46): error C2146: syntax error: missing ')' before identifier '_Size'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(46): error C2059: syntax error: ')'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(46): error C2065: '_Size': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(47): error C2065: 'streamsize': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(47): error C2146: syntax error: missing ';' before identifier '_Size'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(47): error C2059: syntax error: ')'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(47): error C2065: '_Size': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(48): error C2146: syntax error: missing ';' before identifier '_State'
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(48): error C2065: '_State': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(48): error C2653: 'ios_base': is not a class or namespace name
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(48): error C2065: 'badbit': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(49): error C2181: illegal else without matching if
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(52): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(54): error C2065: '_State': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(54): error C2653: 'ios_base': is not a class or namespace name
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(54): error C2065: 'badbit': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(57): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(58): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(58): error C2653: 'ios_base': is not a class or namespace name
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(58): error C2065: 'badbit': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(61): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(61): error C2065: '_State': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(62): error C2065: '_Ostr': undeclared identifier
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.15.26726\include\xstring_insert.h(65): fatal error C1506: unrecoverable block scoping error

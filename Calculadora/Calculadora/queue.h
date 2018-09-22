@@ -49,7 +49,7 @@ inline void queue<T>::enqueue(const T * _data) {
 	catch (std::bad_alloc exception) {
 		return;
 	}
-	nuevo->data = _data;
+	nuevo->data = _data; // Error	C2440	'=': cannot convert from 'const T *' to 'T *'
 	nuevo->next = nullptr;
 	if (isEmpty()) {
 		head = nuevo;
