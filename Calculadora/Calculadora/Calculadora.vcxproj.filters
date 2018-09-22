@@ -21,6 +21,9 @@
     <ClCompile Include="Calculadora.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CambioDeBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stack.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Calculadora.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CambioDeBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
