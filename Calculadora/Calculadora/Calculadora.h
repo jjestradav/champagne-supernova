@@ -24,7 +24,6 @@ public:
 	bool esNumero(string numero);
 	int precedencia(char c);
 	void convertirPosfija(queue<string>& cola);
-	double evaluarPosfija(queue<string>& cola);
 private:
 	queue<string> cola;
 	queue<string> colaPosfija;
