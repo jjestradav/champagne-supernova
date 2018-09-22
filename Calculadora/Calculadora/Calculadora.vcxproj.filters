@@ -18,6 +18,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Calculadora.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CambioDeBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stack.h">
@@ -29,5 +35,14 @@
     <ClInclude Include="List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
+=======
+    <ClInclude Include="Calculadora.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CambioDeBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+>>>>>>> 20287151bdbb5ccd83fdb4893582f9cf426013a4
   </ItemGroup>
 </Project>
