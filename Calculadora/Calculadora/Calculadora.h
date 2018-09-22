@@ -6,15 +6,21 @@
 #include<cstdlib>
 #include"queue.h"
 #include"Stack.h"
-using namespace std;
+
+using std::istream;
+using std::string;
+using std::cin;
+using std::cout;
+using std::endl;
 
 class Calculadora {
 public:
 	Calculadora();
 	~Calculadora();
+	void calcular();
 	string capturarExpresion(istream&);
 	void convertirACola(string expresion);
-	void imprimirCola(queue<string> cola);
+	void imprimirCola(queue<string>& cola);
 	bool esNumero(string numero);
 	int precedencia(char c);
 	void convertirPosfija(queue<string>& cola);

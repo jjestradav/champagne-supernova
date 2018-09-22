@@ -1,8 +1,15 @@
 #include "Calculadora.h"
 
-Calculadora::Calculadora() { }
+Calculadora::Calculadora() {
+}
 
 Calculadora::~Calculadora() { }
+
+void Calculadora::calcular() {
+	string expresion = capturarExpresion(cin);
+	convertirACola(expresion);
+	imprimirCola(cola);
+}
 
 string Calculadora::capturarExpresion(istream& entrada) {
 	string expresion;
@@ -26,18 +33,20 @@ void Calculadora::convertirACola(string expresion) {
 		}
 		else {
 			if (bandera)
-				cola.enqueue(&numTemp);
+				cola.enqueue(*new string(numTemp));
 			numTemp = "";
 			bandera = false;
-			cola.enqueue(&string(1, expresion[i]));
+			string* a = new string(1, expresion[i]);
+			cola.enqueue(*a);
 		}
 	}
 	if (bandera) // durante el for inserta solamente si se encuentra con un operando
-		cola.enqueue(&numTemp);
+		cola.enqueue(*new string(numTemp));
 }
 
-void Calculadora::imprimirCola(queue<string> cola) {
-
+void Calculadora::imprimirCola(queue<string>& cola) {
+	while (!cola.isEmpty()) 
+		cout << cola.dequeue() << ", ";
 }
 
 bool Calculadora::esNumero(string numero)
@@ -59,40 +68,43 @@ int Calculadora::precedencia(char c) {
 	return -1;
 }
 
-/*
-	
-*/
-void Calculadora::convertirPosfija(queue<string>& cola) {
-	char c;
-	string a;
-	Stack<char> pila;
 
-	while (!cola.empty()) {
-		a = cola.front();
-		if (esNumero(a))
-			colaPosfija.push(a);
-		else if (a[0] == '(')
-			pila.push(a[0]);
-		else if (a[0] == ')')
-			while ((c = pila.top()) != '(') {
-				pila.pop();
-				colaPosfija.push(string(1, c));
-			}
-		else {
-			while (!pila.empty() && precedencia(pila.top()) >= precedencia(a[0])) {
-				colaPosfija.push(string(1, pila.top()));
-				pila.pop();
-			}
-			pila.push(a[0]);
-		}
-		cola.pop();
-	}
-	while (!pila.empty()) {
-		// mete a la cola TODO lo que le resta a la pila
-		// hay momentos donde quedan '(' "perdidos"
-		// este parentesis jode el proceso cuando se evalua
-		if (pila.top() != '(')
-			colaPosfija.push(string(1, pila.top()));
-		pila.pop();
-	}
-}
+//void Calculadora::convertirPosfija(queue<string>& cola) {
+//	char c;
+//	string a;
+//	Stack<char> pila;
+//
+//	while (!cola.isEmpty()) {
+//		a = cola.next();
+//		if (esNumero(a))
+//			colaPosfija.enqueue(a);
+//		else if (a[0] == '(')
+//			pila.push(a[0]);
+//		else if (a[0] == ')')
+//			while ((c = pila.top()) != '(') {
+//				pila.pop();
+//				string a(1, c);
+//				colaPosfija.enqueue(a);
+//			}
+//		else {
+//			while (!pila.empty() && precedencia(pila.top()) >= precedencia(a[0])) {
+//				string a(1, pila.top());
+//				colaPosfija.enqueue(a);
+//				pila.pop();
+//			}
+//			pila.push(a[0]);
+//		}
+//		cola.dequeue();
+//	}
+//	while (!pila.empty()) {
+//		// mete a la cola TODO lo que le resta a la pila
+//		// hay momentos donde quedan '(' "perdidos"
+//		// este parentesis jode el proceso cuando se evalua
+//		if (pila.top() != '(') {
+//			string a(1, pila.top());
+//			colaPosfija.enqueue(a);
+//		}
+//		pila.pop();
+//	}
+//}
+
