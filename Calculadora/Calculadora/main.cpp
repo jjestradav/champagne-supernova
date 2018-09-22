@@ -1,7 +1,4 @@
-/*
-	Nota: revisar el procedimiento cuando son numeros
-	negativos, por ejemplo -3+-5
-*/
+/**<members>Nota: revisar el procedimiento cuando son numeros negativos, por ejemplo -3+-5</members>*/
 
 #include <iostream>
 <<<<<<< HEAD
@@ -21,28 +18,32 @@ int main() {
 #include<cstdlib>
 #include<queue>
 #include<stack>
-using namespace std;
+#include"Calculadora.h"
 
-void convertirACola(string expresion, queue<string>& cola);
+
 istream& capturarExpresion(istream&, string&);
-void imprimirCola(queue<string> cola);
+void convertirACola(string expresion, std::queue<string>& cola);
+void imprimirCola(std::queue<string> cola);
 bool esNumero(string numero);
-queue<string> convertirPosfija(queue<string> cola);
+std::queue<string> convertirPosfija(std::queue<string> cola);
 int precedencia(char c);
 double operacion(char, double, double);
-double evaluarPosfija(queue<string> colaPosfija);
+double evaluarPosfija(std::queue<string> colaPosfija);
 
 int main() {
-	queue<string> cola;
-	queue<string> colaPosFija;
-	string expresion;
-	double resultado;
-	capturarExpresion(cin, expresion);
-	convertirACola(expresion, cola);
-	// imprimirCola(cola);
-	colaPosFija = convertirPosfija(cola);
-	resultado = evaluarPosfija(colaPosFija);
-	cout << resultado << endl;
+	//queue<string> cola;
+	//queue<string> colaPosFija;
+	//string expresion;
+	//double resultado;
+	//capturarExpresion(cin, expresion);
+	//convertirACola(expresion, cola);
+	//// imprimirCola(cola);
+	//colaPosFija = convertirPosfija(cola);
+	//resultado = evaluarPosfija(colaPosFija);
+	//cout << resultado << endl;
+
+	Calculadora calculadora;
+	calculadora.calcular();
 
 	system("pause");
 
@@ -50,8 +51,8 @@ int main() {
 	return 0;
 }
 
-double evaluarPosfija(queue<string> cola) {
-	stack<double> pila;
+double evaluarPosfija(std::queue<string> cola) {
+	std::stack<double> pila;
 	string c;
 	double oper1, oper2, valor;
 	while (!cola.empty()) {
@@ -92,10 +93,10 @@ int precedencia(char c) {
 	return -1;
 }
 
-queue<string> convertirPosfija(queue<string> cola) {
+std::queue<string> convertirPosfija(std::queue<string> cola) {
 	char c;
 	string a;
-	queue<string> temp;
+	std::queue<string> temp;
 	std::stack<char> pila;
 
 	while (!cola.empty()) {
@@ -137,7 +138,7 @@ bool esNumero(string numero) {
 	return true;
 }
 
-void imprimirCola(queue<string> cola) {
+void imprimirCola(std::queue<string> cola) {
 	while (!cola.empty()) {
 		cout << cola.front() << ", ";
 		cola.pop();
@@ -155,14 +156,15 @@ istream& capturarExpresion(istream& entrada, string& exp) {
 	}
 	return entrada;
 }
-/*
+/**<idea>
 	La idea del metodo es sustituir los caracteres que usabamos para realizar
 	operaciones por string. Antes revisabamos caracter por caracter pero cuando
 	son numeros superiores a 9 no funciona, por lo que se implementa una cola que
 	tiene el proposito de almacenar los numeros y operandos en el mismo orden que
 	fueron digitados para luego ser evaluados en el orden que corresponda, FIFO
+	</idea>
 */
-void convertirACola(string expresion, queue<string>& cola) {
+void convertirACola(string expresion, std::queue<string>& cola) {
 	string numTemp;
 	bool bandera = false; // para controlar si lo primero y lo ultimo digitado es un entero
 	for (size_t i = 0; i < expresion.size(); i++) {
