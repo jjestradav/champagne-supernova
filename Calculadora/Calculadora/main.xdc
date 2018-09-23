@@ -6,7 +6,8 @@
 	operaciones por string. Antes revisabamos caracter por caracter pero cuando
 	son numeros superiores a 9 no funciona, por lo que se implementa una cola que
 	tiene el proposito de almacenar los numeros y operandos en el mismo orden que
-	fueron digitados para luego ser evaluados en el orden que corresponda, FIFO</idea>
+	fueron digitados para luego ser evaluados en el orden que corresponda, FIFO
+	</idea>
 
 </member>
 </members>
