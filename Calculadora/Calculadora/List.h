@@ -8,11 +8,11 @@ template <class T>
 class iterator;
 template<class T>
 struct Node {
-	const T* data;
+	T data;
 	Node<T>* next;
 };
 
-template <class T> 
+template <class T>
 class List {
 private:
 	Node<T>* first;
@@ -20,29 +20,29 @@ private:
 public:
 	List();
 	~List();
-	void push_front(const T* _data);
-	void push_back(const T* _data);
-	const T* pop_front();
-	const T* pop_back(); 
+	void push_front(const T& _data);
+	void push_back(const T& _data);
+	const T& pop_front();
+	const T& pop_back();
 	//T* pop(int pos); creo que esta operacion no es necesaria
 	void deletelist();
 	bool isEmpty();
-	iterator<List>* getiterator();
+	/*iterator<List>* getiterator();*/
 };
 #endif // !LIST_H
 
 template<class T>
-inline List<T>::List(){
+inline List<T>::List() {
 	first = nullptr;
 }
 
 template<class T>
-inline List<T>::~List(){
+inline List<T>::~List() {
 	deletelist();
 }
 
 template<class T>
-inline void List<T>::push_front(const T * _data){
+inline void List<T>::push_front(const T & _data) {
 	Node<T>* nuevo;
 	try {
 		nuevo = new Node<T>();
@@ -62,7 +62,7 @@ inline void List<T>::push_front(const T * _data){
 }
 
 template<class T>
-inline void List<T>::push_back(const T * _data){
+inline void List<T>::push_back(const T & _data) {
 	Node<T>* nuevo;
 	try {
 		nuevo = new Node<T>;
@@ -81,11 +81,11 @@ inline void List<T>::push_back(const T * _data){
 }
 
 template<class T>
-inline const T * List<T>::pop_front(){
+inline const T & List<T>::pop_front() {
 	if (isEmpty())
 		return nullptr;
 	Node<T>* p = first;
-	const T* _data;
+	T _data;
 	_data = p->data;
 	first = first->next;
 	delete p;
@@ -94,12 +94,12 @@ inline const T * List<T>::pop_front(){
 }
 
 template<class T>
-inline const T * List<T>::pop_back(){
+inline const T & List<T>::pop_back() {
 	if (isEmpty())
 		return nullptr;
 	Node<T>* p = first;
 	Node<T>* q;
-	const T* _data;
+	T _data;
 	while (p->next != nullptr) {
 		q = p;
 		p = p->next;
@@ -114,7 +114,7 @@ inline const T * List<T>::pop_back(){
 
 
 template<class T>
-inline void List<T>::deletelist(){
+inline void List<T>::deletelist() {
 	while (this->pop_front() != nullptr);
 }
 
@@ -129,5 +129,4 @@ inline bool List<T>::isEmpty()
 //inline iterator<List>* List<T>::getiterator(){
 //	return NULL;
 //}
-
 

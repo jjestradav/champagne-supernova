@@ -1,4 +1,5 @@
 
+
 #ifndef QUEUE_H
 #define QUEUE_H
 #include <iostream>
@@ -6,7 +7,7 @@
 
 template<class T>
 struct NodeQ {
-	T* data;
+	T data;
 	struct NodeQ<T>* next;
 };
 template<class T>
@@ -19,9 +20,9 @@ public:
 	queue();
 	~queue();
 	bool isEmpty();
-	void enqueue(T&);
-	T& dequeue();
-	T& next();
+	void enqueue(const T&);
+	const T& dequeue();
+	const T& next();
 };
 #endif // QUEUE_H
 
@@ -42,7 +43,7 @@ inline queue<T>::~queue() {
 }
 
 template<class T>
-inline void queue<T>::enqueue(T& _data) {
+inline void queue<T>::enqueue(const T& _data) {
 	NodeQ<T>* nuevo;
 	try {
 		nuevo = new NodeQ<T>;
@@ -50,7 +51,7 @@ inline void queue<T>::enqueue(T& _data) {
 	catch (std::bad_alloc exception) {
 		return;
 	}
-	nuevo->data = &_data; // Error	C2440	'=': cannot convert from 'const T *' to 'T *'
+	nuevo->data = _data; // Error	C2440	'=': cannot convert from 'const T *' to 'T *'
 	nuevo->next = nullptr;
 	if (isEmpty()) {
 		head = nuevo;
@@ -62,10 +63,10 @@ inline void queue<T>::enqueue(T& _data) {
 	}
 }
 template<class T>
-inline T & queue<T>::dequeue() {
+inline const T & queue<T>::dequeue() {
 	if (!isEmpty()) {
 		NodeQ<T>* tmp;
-		T* _data;
+		T _data;
 		tmp = head;
 		_data = head->data;
 		head = head->next;
@@ -74,14 +75,13 @@ inline T & queue<T>::dequeue() {
 		}
 		delete tmp;
 		tmp = nullptr;
-		return *_data;
+		return _data;
 	}
 }
 
 template<class T>
-inline T& queue<T>::next() {
+inline const T& queue<T>::next() {
 	if (!isEmpty())
-		return *head->data;
+		return head->data;
 
 }
-
