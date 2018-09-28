@@ -18,20 +18,9 @@ double operacion(char, double, double);
 double evaluarPosfija(std::queue<string> colaPosfija);
 
 int main() {
-	//queue<string> cola;
-	//queue<string> colaPosFija;
-	//string expresion;
-	//double resultado;
-	//capturarExpresion(cin, expresion);
-	//convertirACola(expresion, cola);
-	//// imprimirCola(cola);
-	//colaPosFija = convertirPosfija(cola);
-	//resultado = evaluarPosfija(colaPosFija);
-	//cout << resultado << endl;
 
 	Calculadora calculadora;
 	calculadora.calcular();
-
 	system("pause");
 
 	return 0;

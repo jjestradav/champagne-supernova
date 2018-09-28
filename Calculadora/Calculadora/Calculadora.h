@@ -4,8 +4,9 @@
 #include<string>
 #include<iostream>
 #include<cstdlib>
-#include"queue.h"
-#include"Stack.h"
+#include"QueueString.h"
+#include"StackChar.h"
+#include"StackDouble.h"
 
 using std::istream;
 using std::string;
@@ -20,13 +21,18 @@ public:
 	void calcular();
 	string capturarExpresion(istream&);
 	void convertirACola(string expresion);
-	void imprimirCola(queue<string>& cola);
+	void imprimirCola(QueueString& cola);
 	bool esNumero(string numero);
 	int precedencia(char c);
-	void convertirPosfija(queue<string>& cola);
+	void convertirPosfija(QueueString& cola);
+	double operacion(char, double, double);
+	double evaluarPosfija(QueueString& colaPosfija);
+	string corregirExpresion(string expresion);
+	void convertirAColaV2(string expresion);
 private:
-	queue<string> cola;
-	queue<string> colaPosfija;
+	QueueString cola;
+	QueueString colaPosfija;
+	QueueString colaImprimir;
 };
 
 #endif

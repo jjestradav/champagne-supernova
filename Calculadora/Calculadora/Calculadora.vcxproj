@@ -118,13 +118,16 @@
     <ClCompile Include="Calculadora.cpp" />
     <ClCompile Include="CambioDeBase.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="QueueString.cpp" />
+    <ClCompile Include="StackChar.cpp" />
+    <ClCompile Include="StackDouble.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculadora.h" />
     <ClInclude Include="CambioDeBase.h" />
-    <ClInclude Include="List.h" />
-    <ClInclude Include="queue.h" />
-    <ClInclude Include="Stack.h" />
+    <ClInclude Include="QueueString.h" />
+    <ClInclude Include="StackChar.h" />
+    <ClInclude Include="StackDouble.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

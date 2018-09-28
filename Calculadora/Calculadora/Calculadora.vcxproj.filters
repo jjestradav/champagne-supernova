@@ -24,21 +24,30 @@
     <ClCompile Include="CambioDeBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="StackChar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StackDouble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QueueString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="queue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="List.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Calculadora.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CambioDeBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QueueString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackChar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackDouble.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
