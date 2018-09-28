@@ -24,31 +24,39 @@
     <ClCompile Include="CambioDeBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-=======
     <ClCompile Include="QueueString.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
->>>>>>> a8b529f38e4efaa0719cf1f5ba81cede4de9839a
     <ClCompile Include="StackChar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StackDouble.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-<<<<<<< HEAD
-    <ClCompile Include="QueueString.cpp">
-=======
     <ClCompile Include="StackInt.cpp">
->>>>>>> a8b529f38e4efaa0719cf1f5ba81cede4de9839a
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Stack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Calculadora.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CambioDeBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exceptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="iterator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="QueueString.h">
@@ -58,12 +66,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StackDouble.h">
-<<<<<<< HEAD
-=======
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StackInt.h">
->>>>>>> a8b529f38e4efaa0719cf1f5ba81cede4de9839a
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
