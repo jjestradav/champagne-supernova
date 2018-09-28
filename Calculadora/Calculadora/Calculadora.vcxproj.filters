@@ -24,13 +24,23 @@
     <ClCompile Include="CambioDeBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="QueueString.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+>>>>>>> a8b529f38e4efaa0719cf1f5ba81cede4de9839a
     <ClCompile Include="StackChar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StackDouble.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="QueueString.cpp">
+=======
+    <ClCompile Include="StackInt.cpp">
+>>>>>>> a8b529f38e4efaa0719cf1f5ba81cede4de9839a
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -48,6 +58,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StackDouble.h">
+<<<<<<< HEAD
+=======
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StackInt.h">
+>>>>>>> a8b529f38e4efaa0719cf1f5ba81cede4de9839a
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
