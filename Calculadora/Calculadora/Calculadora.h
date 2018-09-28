@@ -7,6 +7,7 @@
 #include"QueueString.h"
 #include"StackChar.h"
 #include"StackDouble.h"
+#include"CambioDeBase.h"
 
 using std::istream;
 using std::string;
@@ -29,6 +30,8 @@ public:
 	double evaluarPosfija(QueueString& colaPosfija);
 	string corregirExpresion(string expresion);
 	void convertirAColaV2(string expresion);
+	int evaluarBase(size_t base);
+	std::string evaluarHex();
 private:
 	QueueString cola;
 	QueueString colaPosfija;

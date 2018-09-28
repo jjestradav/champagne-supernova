@@ -218,3 +218,124 @@ void Calculadora::convertirAColaV2(string expresion) {
 	if (bandera) // durante el for inserta solamente si se encuentra con un operando
 		cola.enqueue(numTemp);
 }
+
+int Calculadora::evaluarBase(size_t base)
+{
+	int a = 0;
+	int b = 0;
+	size_t aux = 0;
+	int resultado = -1;
+	StackChar stack;
+	while (!cola.isEmpty()) {
+		b = a;
+		string d = cola.next();
+		if (esNumero(d)) {
+
+			switch (base) {
+			case 2:
+			{
+				a = binToDec(atoi(d.c_str()));
+			}
+			break;
+
+			case 8:
+			{
+				a = octToDec(atoi(d.c_str()));
+			}
+
+			break;
+
+			default:
+				break;
+			}
+
+			cola.dequeue();
+
+			while (!stack.isEmpty()) {
+				switch (base) {
+				case 2:
+				{
+
+					if (resultado != -1) {
+						resultado = operacion(stack.peek(), binToDec(resultado), a);
+						resultado = decToBin(resultado);
+					}
+					else {
+						resultado = operacion(stack.peek(), b, a);
+						resultado = decToBin(resultado);
+					}
+
+
+					stack.pop();
+				}
+				break;
+
+				case 8:
+				{
+					if (resultado != -1) {
+						resultado = operacion(stack.peek(), octToDec(resultado), a);
+						resultado = decToBin(resultado);
+					}
+					else {
+						resultado = operacion(stack.peek(), b, a);
+						resultado = decToOct(resultado);
+					}
+
+
+					stack.pop();
+				}
+
+				break;
+
+
+				default:
+					break;
+				}
+
+			}
+		}
+		else
+		{
+			stack.push(cola.dequeue()[0]);
+			
+		}
+	}
+	return resultado;
+}
+
+std::string Calculadora::evaluarHex()
+{
+	int a = 0;
+	int b = 0;
+	StackChar stack;
+	int resultado = -1;
+
+	while (!cola.isEmpty()) {
+
+		if (esNumeroHex(cola.next()[0])) {
+			b = a;
+			a = hexToDec(cola.next());
+
+			cola.dequeue();
+
+			while (!stack.isEmpty()) {
+				if (resultado != -1) {
+					resultado = operacion(stack.peek(), resultado, a);
+
+				}
+				else {
+					resultado = operacion(stack.peek(), b, a);
+
+				}
+				stack.pop();
+			}
+		}
+		else {
+			stack.push(cola.dequeue()[0]);
+			
+		}
+
+
+	}
+	return decToHex(resultado);
+}

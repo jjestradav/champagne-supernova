@@ -1,5 +1,4 @@
 #include "CambioDeBase.h"
-
 int hexToDec(std::string s)
 {
 	std::stringstream ss;
@@ -10,11 +9,11 @@ int hexToDec(std::string s)
 
 }
 
-float octToDec(float s)
+int octToDec(int s)
 {
 	std::stringstream ss;
 	ss << std::oct << s;
-	float aux;
+	int aux;
 	ss >> aux;
 	return aux;
 }
@@ -50,60 +49,72 @@ std::string decToHex(int dec)
 	return ss.str();
 
 }
-//int decToBin(int dec)
-//{
-//	std::stack<int> stack;
-//	int copia = dec;
-//	if (dec < 0) {
-//		dec *= -1;
-//	}
-//	while (dec != 0) {
-//
-//
-//		int a = dec % 2;
-//		stack.push(a);
-//
-//		dec = (int)(dec / 2);
-//	}
-//
-//	std::stringstream ss;
-//
-//	while (!stack.empty()) {
-//
-//		ss << stack.top();
-//		stack.pop();
-//	}
-//	if (copia < 0) {
-//		return atoi(ss.str().c_str())*-1;
-//	}
-//	return atoi(ss.str().c_str());
-//}
+int decToBin(int dec)
+{
+	StackInt stack;
+	int copia = dec;
+	if (dec < 0) {
+		dec *= -1;
+	}
+	while (dec != 0) {
 
-//int decToOct(int dec)
-//{
-//	std::stack<int> stack;
-//	int copia = dec;
-//	if (dec < 0) {
-//		dec *= -1;
-//	}
-//	while (dec != 0) {
-//
-//
-//		int a = dec % 8;
-//		stack.push(a);
-//
-//		dec = (int)(dec / 8);
-//	}
-//
-//	std::stringstream ss;
-//
-//	while (!stack.empty()) {
-//
-//		ss << stack.top();
-//		stack.pop();
-//	}
-//	if (copia < 0) {
-//		return atoi(ss.str().c_str())*-1;
-//	}
-//	return atoi(ss.str().c_str());
-//}
+
+		int a = dec % 2;
+		stack.push(a);
+
+		dec = (int)(dec / 2);
+	}
+
+	std::stringstream ss;
+
+	while (!stack.isEmpty()) {
+
+		ss << stack.pop();
+	
+	}
+	if (copia < 0) {
+		return atoi(ss.str().c_str())*-1;
+	}
+	return atoi(ss.str().c_str());
+}
+
+int decToOct(int dec)
+{
+	StackInt stack;
+	int copia = dec;
+	if (dec < 0) {
+		dec *= -1;
+	}
+	while (dec != 0) {
+
+
+		int a = dec % 8;
+		stack.push(a);
+
+		dec = (int)(dec / 8);
+	}
+
+	std::stringstream ss;
+
+	while (!stack.isEmpty()) {
+
+		ss << stack.pop();
+		
+	}
+	if (copia < 0) {
+		return atoi(ss.str().c_str())*-1;
+	}
+	return atoi(ss.str().c_str());
+}
+
+bool esNumeroHex(char numero)
+{
+
+	if (!isdigit(numero)) {
+		char aux = tolower(numero);
+		if (aux != 'a' && aux != 'b'&& aux != 'c' && aux != 'd' && aux != 'e' && aux != 'f')
+			return false;
+	}
+	return true;
+
+}

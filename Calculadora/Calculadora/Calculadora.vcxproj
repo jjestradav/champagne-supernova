@@ -121,21 +121,20 @@
     <ClCompile Include="QueueString.cpp" />
     <ClCompile Include="StackChar.cpp" />
     <ClCompile Include="StackDouble.cpp" />
-<<<<<<< HEAD
-=======
     <ClCompile Include="StackInt.cpp" />
->>>>>>> a8b529f38e4efaa0719cf1f5ba81cede4de9839a
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Calculadora.h" />
     <ClInclude Include="CambioDeBase.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="iterator.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="queue.h" />
     <ClInclude Include="QueueString.h" />
+    <ClInclude Include="Stack.h" />
     <ClInclude Include="StackChar.h" />
     <ClInclude Include="StackDouble.h" />
-<<<<<<< HEAD
-=======
     <ClInclude Include="StackInt.h" />
->>>>>>> a8b529f38e4efaa0719cf1f5ba81cede4de9839a
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
